@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aula07</string>
+    <string name="tvTitulo">Calculadora IMC</string>
+    <string name="tvPesoLabel">Peso: 0 kg</string>
+    <string name="tvAlturaLabel">Altura: 0 kg</string>
+    <string name="btnMudarPeso">Peso</string>
+    <string name="btnMudarAltura">Altura</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="tvResultado">Resultado</string>
+    <string name="tvResultImc"></string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ok">Ok</string>
+</resources>
