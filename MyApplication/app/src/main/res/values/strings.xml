@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="labelName">Nome: </string>
+    <string name="labelSexo">Sexo: </string>
+    <string name="sexoResult"></string>
+    <string name="radio_male">Masculino</string>
+    <string name="radio_female">Feminino</string>
+
+</resources>
