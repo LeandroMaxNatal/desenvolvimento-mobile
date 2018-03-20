@@ -26,7 +26,8 @@
         android:layout_weight="0"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edtPlaceHolder" />
+        android:text="@string/edtPlaceHolder"
+        android:hint="Digite seu nome"/>
 
     <TextView
         android:id="@+id/lbSexo"
