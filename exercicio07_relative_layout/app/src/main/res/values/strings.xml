@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">exercicio07_relative_layout</string>
+    <string name="lbNome">Nome:</string>
+    <string name="lbIdade">Idade</string>
+    <string name="fatherName">Nome do Pai:</string>
+    <string name="motherName">Nome da Mãe:</string>
+    <string name="lbStreetTxt">Rua:</string>
 </resources>

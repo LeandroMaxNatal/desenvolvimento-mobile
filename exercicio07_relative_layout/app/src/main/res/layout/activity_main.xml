@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:id="@+id/welcome_msg"
+        android:id="@+id/lbNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teste"
+        android:text="@string/lbNome"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
         android:layout_marginTop="15dp"
-        android:gravity="center"
+        android:layout_marginLeft="15dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -21,12 +22,111 @@
         android:id="@+id/login_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/welcome_msg"
-        android:layout_marginTop="50dp"
-        android:hint="Login"
+        android:layout_toRightOf="@id/lbNome"
+        android:layout_toLeftOf="@id/lbIdade"
+        android:layout_marginLeft="15dp"
         android:maxLines="1"/>
 
+    <EditText
+        android:id="@+id/idade_txt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:hint=""/>
 
+    <TextView
+        android:id="@+id/lbIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/idade_txt"
+        android:text="@string/lbIdade"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbFatherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fatherName"
+        android:layout_below="@id/lbNome"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbFatherName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lbNome"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/editText" />
+
+    <TextView
+        android:id="@+id/lbMotherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lbFatherName"
+        android:layout_below="@+id/lbFatherName"
+        android:layout_marginTop="15dp"
+        android:text="@string/motherName"
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbFatherName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lbFatherName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/lbStreetTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lbFatherName"
+        android:layout_below="@+id/lbMotherName"
+        android:layout_marginTop="15dp"
+        android:text="@string/lbStreetTxt"
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtRua"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lbStreetTxt"
+        android:layout_toLeftOf="@id/lbNumero"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/lbMotherName"/>
+
+    <EditText
+        android:id="@+id/edtNumero"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+
+        android:layout_below="@id/lbMotherName"/>
+
+    <TextView
+        android:id="@+id/lbNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/edtNumero"
+        android:layout_below="@id/lbMotherName"
+        android:layout_marginTop="15dp"
+        android:text="Numero"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 </RelativeLayout>
