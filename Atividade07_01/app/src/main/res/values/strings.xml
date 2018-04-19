@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Atividade07_01</string>
+    <string name="lbNome">Nome:</string>
+    <string name="lbSexo">Sexo:</string>
+    <string name="rdbMasclb">Masculino</string>
+    <string name="rdbFemLabel">Feminino</string>
+    <string name="btnExibir">Exibir</string>
+    <string name="btnLbLimpar">Limpar</string>
+    <string name="lbName">Nome:</string>
+    <string name="resNome"></string>
+    <string name="edtPlaceHolder" />
+    <string name="resSexo" />
+</resources>
