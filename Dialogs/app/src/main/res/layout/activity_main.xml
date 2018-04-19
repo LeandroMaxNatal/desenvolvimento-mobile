@@ -20,4 +20,18 @@
         android:onClick="openSimples"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Dialog Radio"
+        android:onClick="openRadio"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Dialog Multi"
+        android:onClick="openMulti"
+        />
+
 </LinearLayout>

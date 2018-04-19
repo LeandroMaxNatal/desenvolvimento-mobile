@@ -24,4 +24,14 @@ public class MainActivity extends Activity {
         SimpleDialogFragment mySimpleDialogFragment = new SimpleDialogFragment();
         mySimpleDialogFragment.show(getFragmentManager(), "mySimpleDialogFrame");
     }
+
+    public void openRadio(View view) {
+        RadioDialogFragment radioDialogFragment = new RadioDialogFragment();
+        radioDialogFragment.show(getFragmentManager(), "myRadioDialog");
+    }
+
+    public void openMulti(View view) {
+        MultiDialogFragment multiDialogFragment = new MultiDialogFragment();
+        multiDialogFragment.show(getFragmentManager(), "myMultiDialog");
+    }
 }
