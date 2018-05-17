@@ -6,15 +6,6 @@
     tools:context="com.example.androidbti.provamobile.ContactListFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment Esquerda"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:background="@android:color/holo_green_dark"
-        />
 
     <ListView
         android:id="@+id/myList"

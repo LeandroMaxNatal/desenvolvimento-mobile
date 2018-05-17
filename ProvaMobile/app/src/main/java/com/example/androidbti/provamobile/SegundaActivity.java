@@ -7,28 +7,23 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SegundaActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "userName";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
+        Intent intent = getIntent();
+        String nomeDoUsuario = "Prezado(a) " + intent.getStringExtra(EXTRA_MESSAGE);
 
-        adapter.add("Contato 1");
-        adapter.add("Contato 2");
-        adapter.add("Contato 3");
-        adapter.add("Contato 4");
-        adapter.add("Contato 5");
-
-        ListView listView = (ListView) findViewById(R.id.myListView);
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(clickListener);
+        TextView tvUsername = (TextView) findViewById(R.id.tvUserName);
+        tvUsername.setText(nomeDoUsuario);
     }
 
     public void voltaPraActivity1(View view) {
